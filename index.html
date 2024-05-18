@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="top">
+                <div class="top-left">
+                    <img src="images/playlist.png" alt="Cover" class="playlist-img">
+                </div>
+                <div class="top-right">
+                    <h1 class="playlist-title" id="list-title"></h1>
+                    <div class="details-wrap">
+                        <div class="user-wrap">
+                            <img class="user-img" src="images/user.png">
+                            <p class="user" id="user"></p>
+                        </div>
+                        <div class="playlist-details">
+                            <p class="list-detail" id="list-number"></p>
+                            <p class="p-divider">•</p>
+                            <p class="list-detail" id="list-time"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table id="list">
+                <tr class="header-row">
+                    <th class="list-column-label">#</th>
+                    <th class="list-column-label">Title</th>
+                    <th class="list-column-label">Album</th>
+                    <th class="list-column-label">Duration</th>
+                    <th class="list-column-label"></th>
+                </tr>
+                <tr class="row" id="song-row">
+                    <td class="cell" id="order"></td>
+                    <td class="cell title-wrap" id="song-details">
+                        <div class="cover-wrap" data-song-url="songURL_here">
+                            <img class="cover" id="cover">
+                            <div class="play-icon-wrap"> <!-- Added a wrapper for the play icon -->
+                                <i class="fa-solid fa-circle-play play-icon" id="play-icon"></i>
+                            </div>
+                        </div>
+                        <div class="title-wrap-2">
+                            <p class="title" id="song-title"></p>
+                            <p class="artist" id="song-artist"></p>
+                        </div>
+                    </td>
+                    <td class="cell album" id="song-album"></td>
+                    <td class="cell duration" id="song-duration"></td>
+                    <td class="cell options-icon" id="options-icon">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/5dbbbfb0c5.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
